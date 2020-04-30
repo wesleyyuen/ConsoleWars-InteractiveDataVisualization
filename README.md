@@ -10,4 +10,4 @@ Main View
 ![](demo%20images/main.PNG)
 
 Scolly-telling
-![](demo%20images/main.PNG)
+![](demo%20images/scrolly.PNG)
