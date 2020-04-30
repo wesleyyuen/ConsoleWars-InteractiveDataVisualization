@@ -1,0 +1,131 @@
+@font-face {
+	font-family: consolewar;
+	src: url("https://db.onlinewebfonts.com/t/71ca48c69de9b3129e1857be042f0556.woff") format("woff");
+}
+
+div#title-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	flex: 1;
+}
+
+div#console-title {
+	font-size: 72px;
+	font-family: consolewar;
+	flex: 3;
+	align-self: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px&display=swap");
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	background: #222831;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	font-family: "Slabo 27px", serif;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.pacman {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #f2d648;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.pacman__eye {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	top: 20px;
+	right: 40px;
+	background: #333333;
+}
+
+.pacman__mouth {
+	background: #222831;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+	animation-name: eat;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+}
+
+.pacman__food {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	background: #fff;
+	border-radius: 50%;
+	top: 40%;
+	left: 120px;
+	animation-name: food;
+	animation-duration: 0.7s;
+	animation-iteration-count: infinite;
+}
+
+div#description {
+	font-size: 24px;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+	max-width: 60%;
+	text-align: center;
+	margin: 15px;
+}
+
+button#navigation {
+	border-radius: 20px;
+	padding: 10px;
+	margin: 20px;
+	max-width: 60%;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+		"Helvetica Neue", sans-serif;
+}
+
+@keyframes eat {
+	0% {
+		clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+	}
+	25% {
+		clip-path: polygon(100% 60%, 44% 48%, 100% 40%);
+	}
+	50% {
+		clip-path: polygon(100% 50%, 44% 48%, 100% 50%);
+	}
+	75% {
+		clip-path: polygon(100% 59%, 44% 48%, 100% 35%);
+	}
+	100% {
+		clip-path: polygon(100% 74%, 44% 48%, 100% 21%);
+	}
+}
+
+@keyframes food {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Console Wars</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="alert alert-warning alert-dismissible fade show" role="alert">
+				<strong>Warning!</strong> Avoid filtering more than <strong>250</strong> nodes at once to reduce
+				lagging. Refresh the page if lagging persists.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<strong>Tip:</strong> Click on nodes for details on sales by region.
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="row">
+				<div class="col-lg-5 view-col widget-pane">
+					<button
+						onclick="widgets.style.zoom='80%'"
+						type="button"
+						class="btn btn-light"
+						id="sizeReduceBtn"
+						style="margin-bottom: 10px;"
+						data-container="body"
+						data-toggle="popover"
+						data-placement="left"
+						data-trigger="hover"
+						data-content="Reduce left pane if content overflows. Suggested browser zoom level: 100%."
+					>
+						Resize
+					</button>
+					<div id="widgets">
+						<div class="header genre">
+							<p>Select games by genre</p>
+						</div>
+						<div class="header score">
+							<p>Select games by score</p>
+							<span>Critics score:&emsp;&emsp;&emsp;&emsp;&emsp;</span><span>User score:</span>
+						</div>
+						<div id="critic" class="score-chart"></div>
+						<div id="user" class="score-chart"></div>
+						<div class="header score-option">
+							<p>Select displayed score type</p>
+						</div>
+						<div class="header year">
+							<p>Select games by release year:</p>
+						</div>
+						<div id="date-chart"></div>
+					</div>
+				</div>
+				<div class="col-lg-7 view-col main-view" id="mainview">
+					<button
+						type="button"
+						class="btn btn-dark btn-circle btn-lg"
+						data-container="body"
+						data-toggle="popover"
+						data-placement="left"
+						data-trigger="hover"
+						data-content="i"
+						id="infoButton"
+					>
+						<span class="btn-label">?</span>
+					</button>
+					<svg id="main"></svg>
+					<div id="legend" style="display: inline-block;"></div>
+				</div>
+			</div>
+		</div>
+		<div id="pieChart" style="pointer-events: none;"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.7.2/d3.min.js"></script>
+		<script src="d3pie.min.js"></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"
+			type="text/javascript"
+		></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+		<script src="https://d3js.org/topojson.v3.min.js"></script>
+		<script type="module" src="js/preprocessor.js"></script>
+		<script type="module" src="js/index.js"></script>
+		<script type="module" src="js/main-view.js"></script>
+		<script type="module" src="js/widget-pane.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('[data-toggle="popover"]').popover();
+			});
+			$(".btn-circle").attr(
+				"data-content",
+				"The domain of video games has long been dominated by 4 major company camps: Sony’s Playstation, Microsoft’s XBox, Nintendo and Valve’s Steam (PC). Our visualization project explores a dataset of around 16000 Video Games (with a focus on around 8000) across almost 4 decades and illustrates the development of this “Console War”. Our application consists of 4 distinct views and visualization begins with a scrollytelling view that provides an overview and statistical summary of the major companies. The application then proceeds to the Main page that focuses on sales numbers and allows users to select and filter games based on other attributes like years, genres and rating scores. Users of this application explore the dataset casually to enjoy and perhaps look up how their favourite franchise performs compared to other games. Users can also discover patterns and compare trends of how genres interact with different console companies, and how they influence the sales numbers. We believe this visualization can help users, both casual users and experts, to visualize patterns in sales of Video Games."
+			);
+		</script>
+	</body>
+</html>

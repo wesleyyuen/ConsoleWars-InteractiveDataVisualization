@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Console Wars</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="icon" type="image/png" href="css/favicon.ico" />
+	</head>
+	<body>
+		<div id="title-container">
+			<div class="pacman">
+				<div class="pacman__eye"></div>
+				<div class="pacman__mouth"></div>
+				<div class="pacman__food"></div>
+			</div>
+			<div id="console-title">Console Wars</div>
+			<div id="description">
+				The domain of video games has long been dominated by 4 major company camps: Sony’s Playstation,
+				Microsoft’s XBox, Nintendo and Valve’s Steam (PC). Our visualization project explores a dataset of
+				around 16000 Video Games (with a focus on around 8000) across almost 4 decades and illustrates the
+				development of this “Console War”. Our application consists of 4 distinct views and visualization begins
+				with a scrollytelling view that provides an overview and statistical summary of the major companies. The
+				application then proceeds to the Main page that focuses on sales numbers and allows users to select and
+				filter games based on other attributes like years, genres and rating scores. Users of this application
+				explore the dataset casually to enjoy and perhaps look up how their favourite franchise performs
+				compared to other games. Users can also discover patterns and compare trends of how genres interact with
+				different console companies, and how they influence the sales numbers. We believe this visualization can
+				help users, both casual and experts, to visualize patterns in sales of Video Games.<br />
+			</div>
+			<button
+				id="navigation"
+				class="btn active btn-default btn-light btn-lg"
+				type="button"
+				onClick="document.location = './controller-view.html'"
+			>
+				Continue
+			</button>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://d3js.org/topojson.v3.min.js"></script>
+		<script src="https://d3js.org/d3.v5.min.js"></script>
+		<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+		<script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
+		<script src="https://d3js.org/d3-timer.v1.min.js"></script>
+		<script src="https://d3js.org/d3-force.v2.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"
+			type="text/javascript"
+		></script>
+	</body>
+</html>

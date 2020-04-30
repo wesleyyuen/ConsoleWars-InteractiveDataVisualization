@@ -1,0 +1,113 @@
+div#container {
+  width: 100%;
+}
+
+div#graphic {
+  padding: 0px 100px 0px 100px;
+}
+
+div#sales > p {
+  color: red;
+}
+
+.title > h4 {
+  font-size: 48px;
+}
+#sections {
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  top: 0px;
+  z-index: 90;
+  padding-bottom: 250px;
+}
+
+.step {
+  margin-bottom: 200px;
+  font-size: 16px;
+  line-height: 23px;
+  color: #767678;
+}
+
+#sections .title {
+  font-family: Arial, Helvetica, "san-serif";
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #222831;
+  line-height: 1.2em;
+}
+
+.sales {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sales > span {
+  font-size: 18px;
+  color: #222831;
+}
+
+#extra-space {
+  height: 100px;
+}
+
+button {
+  background-color: #222831; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: Arial, Helvetica, "san-serif";
+  width: 25%;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+#vis-div {
+  display: inline-block;
+  padding-left: 100px;
+  width: 70%;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  margin-left: 0;
+}
+
+#vis-div .title {
+  font-size: 120px;
+  text-anchor: middle;
+}
+
+#vis-div .sub-title {
+  font-size: 80px;
+  text-anchor: middle;
+}
+html,
+body {
+  width: 100%;
+  color: #222831;
+  background-color: white;
+  font-family: Arial, Helvetica, "san-serif";
+}
+
+.header {
+  padding: 20px;
+  margin-left: 30px;
+}

@@ -1,0 +1,270 @@
+div#controllers {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+html,
+body {
+	width: 100%;
+	color: white;
+	background-color: #222831;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.header {
+	padding: 20px;
+	margin-left: 30px;
+}
+
+.header > p {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.header.genre {
+	position: absolute;
+	top: 5px;
+}
+
+.header.score {
+	position: absolute;
+	top: 95px;
+}
+
+.header.score-option {
+	position: absolute;
+	top: 570px;
+}
+
+.header.year {
+	position: absolute;
+	top: 680px;
+}
+
+div.widget-pane {
+	background-color: #393e46;
+}
+
+div.main-view {
+	background-color: #eeeeee;
+}
+
+div#widgets {
+	display: inline;
+}
+
+div.score-chart {
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	top: 180px;
+	left: -90px;
+}
+
+div#user.score-chart {
+	top: 130px;
+	left: 80px;
+}
+
+div.score-chart svg {
+	width: 500px;
+	height: 300px;
+}
+
+div#date-chart {
+	transform: translate(50, 200);
+	position: absolute;
+	top: 730px;
+	left: 40px;
+	width: 700px;
+	height: 150px;
+}
+
+div#date-chart svg {
+	width: 600px;
+	height: 300px;
+}
+
+svg#main {
+	width: 100%;
+	height: 100%;
+}
+
+div.view-col {
+	padding-left: 0px;
+}
+
+div.tooltip {
+	position: absolute;
+	text-align: center;
+	width: auto;
+	height: auto;
+	padding: 5px;
+	font: 12px sans-serif;
+	border: 2px;
+	border-radius: 5px;
+	pointer-events: none;
+}
+
+div.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin: 0px;
+}
+
+div.container-fluid {
+	padding-top: 20px;
+}
+
+button.dropdown-genre {
+	position: absolute;
+	left: 50px;
+	top: 60px;
+}
+
+button.dropdown-score {
+	position: absolute;
+	left: 50px;
+	top: 630px;
+}
+div#pieChart {
+	position: absolute;
+	opacity: 0.9;
+}
+
+#pieChart > * {
+	border-radius: 20px;
+}
+
+button#sizeReduceBtn {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 10px;
+}
+
+#infoButton {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	margin: 10px;
+}
+
+button#navigation {
+	position: absolute;
+	right: 150px;
+	bottom: 180px;
+	opacity: 0.9;
+}
+
+.btn-circle {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+	margin: 15px;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.42857;
+}
+
+.popover-body {
+	font-size: 15px;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-label {
+	font-weight: bolder;
+	font-size: 17px;
+}
+
+.label {
+	font-family: sans-serif;
+	font-size: 0.5em;
+}
+
+svg {
+	font-family: -apple-system, system-ui, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto,
+		"segoe ui", arial, sans-serif;
+}
+
+rect.overlay {
+	stroke: #888;
+}
+
+rect.selection {
+	stroke: white;
+	fill: white;
+	fill-opacity: 0.4;
+}
+
+.label {
+	font-size: 10px;
+}
+
+.bar text {
+	font-size: 10px;
+}
+
+.ticks text {
+	font-size: 11px;
+}
+
+#labelleft,
+#labelright,
+#label-max,
+#label-min {
+	font-size: 12px;
+}
+
+#label-min,
+#label-max {
+	text-anchor: end;
+}
+
+#labelleft {
+	text-anchor: end;
+}
+
+#labelright {
+	text-anchor: start;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+	stroke-linecap: round;
+}
+
+.track {
+	stroke: #dcdcdc;
+	stroke-width: 10px;
+}
+
+.track-inset {
+	stroke: #dcdcdc;
+	stroke-width: 8px;
+}
+
+.track-overlay {
+	pointer-events: stroke;
+	stroke-width: 50px;
+	stroke: transparent;
+	cursor: crosshair;
+}
+
+.track-handle {
+	fill: #fff;
+	stroke: #000;
+	stroke-opacity: 0.5;
+	stroke-width: 1.25px;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Console Wars</title>
+    <link rel="stylesheet" href="css/controller-style.css" />
+  </head>
+  <body>
+    <!-- <h1 id="header">Console Wars</h1> -->
+    <div class="container">
+      <div id="graphic">
+        <!-- Display the information here -->
+        <div id="sections">
+          <section class="step">
+            <div class="title">
+              <h4>Microsoft</h4>
+              <div class="sales" id="microsoft_eu_sales">
+                <span>Total Sales EU:</span>
+              </div>
+              <div class="sales" id="microsoft_jp_sales">
+                <span>Total Sales JP:</span>
+              </div>
+              <div class="sales" id="microsoft_na_sales">
+                <span>Total Sales NA:</span>
+              </div>
+              <div class="sales" id="microsoft_global_sales">
+                <span>Total Global Sales:</span>
+              </div>
+              <div class="sales" id="microsoft_year_range">
+                <span>Year Range:</span>
+              </div>
+            </div>
+          </section>
+          <section class="step">
+            <div class="title">
+              <h4>Sony</h4>
+              <div class="sales" id="sony_eu_sales">
+                <span>Total Sales EU:</span>
+              </div>
+              <div class="sales" id="sony_jp_sales">
+                <span>Total Sales JP:</span>
+              </div>
+              <div class="sales" id="sony_na_sales">
+                <span>Total Sales NA:</span>
+              </div>
+              <div class="sales" id="sony_global_sales">
+                <span>Total Global Sales:</span>
+              </div>
+              <div class="sales" id="sony_year_range">
+                <span>Year Range:</span>
+              </div>
+            </div>
+          </section>
+          <section class="step">
+            <div class="title">
+              <h4>Nintendo</h4>
+              <div class="sales" id="nintendo_eu_sales">
+                <span>Total Sales EU:</span>
+              </div>
+              <div class="sales" id="nintendo_jp_sales">
+                <span>Total Sales JP:</span>
+              </div>
+              <div class="sales" id="nintendo_na_sales">
+                <span>Total Sales NA:</span>
+              </div>
+              <div class="sales" id="nintendo_global_sales">
+                <span>Total Global Sales:</span>
+              </div>
+              <div class="sales" id="nintendo_year_range">
+                <span>Year Range:</span>
+              </div>
+            </div>
+          </section>
+          <section class="step">
+            <div class="title">
+              <h4>PC</h4>
+              <div class="sales" id="pc_eu_sales">
+                <span>Total Sales EU:</span>
+              </div>
+              <div class="sales" id="pc_jp_sales">
+                <span>Total Sales JP:</span>
+              </div>
+              <div class="sales" id="pc_na_sales">
+                <span>Total Sales NA:</span>
+              </div>
+              <div class="sales" id="pc_global_sales">
+                <span>Total Global Sales:</span>
+              </div>
+              <div class="sales" id="pc_year_range">
+                <span>Year Range:</span>
+              </div>
+            </div>
+          </section>
+          <section class="step">
+            <div class="title">
+              <h4>Others</h4>
+              <div class="sales" id="other_eu_sales">
+                <span>Total Sales EU:</span>
+              </div>
+              <div class="sales" id="other_jp_sales">
+                <span>Total Sales JP:</span>
+              </div>
+              <div class="sales" id="other_na_sales">
+                <span>Total Sales NA:</span>
+              </div>
+              <div class="sales" id="other_global_sales">
+                <span>Total Global Sales:</span>
+              </div>
+              <div class="sales" id="other_year_range">
+                <span>Year Range:</span>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- Display the controller here -->
+        <div id="vis-div">
+          <svg id="vis"></svg>
+          <button
+            id="navigation"
+            onClick="document.location = './project.html'"
+            style="position: absolute; right: 150px; top: -20px; opacity: 0.8;"
+          >
+            Explore the dataset >
+          </button>
+        </div>
+        <div id="extra-space"></div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+    <script src="https://d3js.org/d3-quadtree.v1.min.js"></script>
+    <script src="https://d3js.org/d3-timer.v1.min.js"></script>
+    <script src="https://d3js.org/d3-force.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+    <script type="module" src="js/controller-data.js"></script>
+    <script type="module" src="js/canvas.js"></script>
+    <script type="module" src="js/game-controller-view.js"></script>
+    <script src="js/scroller.js"></script>
+    <script type="module" src="js/controller.js"></script>
+  </body>
+</html>
